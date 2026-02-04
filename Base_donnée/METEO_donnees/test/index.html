@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo – La Garde</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .meteo-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 16px;
+            padding: 25px 30px;
+            width: 320px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .meteo-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .meteo-header h2 {
+            margin: 0;
+            font-size: 1.6em;
+        }
+
+        .meteo-description {
+            text-transform: capitalize;
+            color: #555;
+        }
+
+        .meteo-temp {
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .meteo-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 0.95em;
+        }
+
+        .meteo-details div {
+            background: #f1f5f9;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .sun {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background: #4facfe;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3498db;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="meteo-card">
+
+        <div class="meteo-header">
+            <h2 id="meteo-city"></h2>
+            <div class="meteo-description" id="meteo-description"></div>
+        </div>
+
+        <div class="meteo-temp">
+            <span id="meteo-temperature"></span>
+        </div>
+
+        <div class="meteo-details">
+            <div>🤒 Ressenti<br><span id="meteo-feels"></span></div>
+            <div>💧 Humidité<br><span id="meteo-humidity"></span></div>
+            <div>📈 Pression<br><span id="meteo-pressure"></span></div>
+            <div>💨 Vent<br><span id="meteo-wind"></span></div>
+            <div>☁️ Nuages<br><span id="meteo-clouds"></span></div>
+        </div>
+
+        <div class="sun">
+            <div>🌅 <span id="meteo-sunrise"></span></div>
+            <div>🌇 <span id="meteo-sunset"></span></div>
+        </div>
+
+        <button onclick="getWeather()">🔄 Actualiser</button>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
