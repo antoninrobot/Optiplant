@@ -1,0 +1,106 @@
+:root {
+    --dark-green: #004225;
+    --light-green: #689f38;
+    --alert-orange: #ffc107;
+    --water-blue: #4a86e8;
+    --text-white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Century-Gothic, sans-serif;
+    background: url('nuages.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-white);
+}
+
+.pill-button {
+    background-color: var(--dark-green);
+    padding: 30px 120px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px 0;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.sub-pill {
+    padding: 10px 40px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 50px;
+}
+
+
+.side-column {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+}
+
+.plant-block {
+    background: url('BAC.svg') no-repeat center / cover;
+    height: 220px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border : none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.alert-bar {
+    background-color: var(--alert-orange);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+.data-center {
+    background-color: var(--dark-green);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.stats-top {
+    padding: 30px;
+    flex-grow: 1;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.water-bottom {
+    background-color: var(--water-blue);
+    padding: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+}

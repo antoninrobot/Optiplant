@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('nuages.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding-top: 20px; 
+}
+
+.main-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Section Alerte */
+.home-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    text-decoration: none;
+    color: #000000;
+}
+
+.home-icon {
+    font-size: 2.5rem;
+}
+
+/* 2. Le Header : Remonté au maximum */
+.top-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 20px 0; /* Réduit le padding pour coller au haut */
+    width: 100%;
+}
+
+/* 3. La bannière Alerte */
+.alert-banner {
+    background-color: #ff9800; /* Orange */
+    color: white;
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* ... Le reste du code (boutons, display-area, etc.) reste identique ... */
+
+.action-buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.btn {
+    background-color: #1a4d1a;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.display-area {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    background-color: #008000;
+    margin-top: 100px; /* Pousse le carré et ce qui suit vers le bas */
+}
+
+/* Panneau de données */
+.data-panel {
+    background-color: #0d260d;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px; /* Optionnel : espace entre le carré et le panneau */
+}
