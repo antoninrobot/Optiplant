@@ -1,0 +1,83 @@
+/* Configuration générale */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Century-Gothic, sans-serif;
+    background: url('nuages.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Icône Accueil */
+.home-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2.5rem;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100vh; /* Augmenté pour utiliser plus de hauteur */
+    justify-content: flex-start; /* Aligne tout vers le haut au lieu de répartir */
+    padding-top: 20px; /* Espace par rapport au bord haut de l'écran */
+}
+
+/* Titre RECETTES remonté */
+.header-main {
+    background-color: #0d420d;
+    padding: 30px 120px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    margin-top: 10px; /* Positionnement précis en haut */
+}
+
+/* Bouton Liste des recettes rapproché du titre */
+.sub-header {
+    background-color: #0d420d;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 15px; /* Espace contrôlé sous le titre principal */
+    margin-bottom: 60px; /* Crée l'espace nécessaire avant les étiquettes bleues */
+}
+
+/* Rangée des étiquettes bleues  */
+.labels-row {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: auto; /* Pousse le bouton Valider tout en bas */
+}
+
+.label-blue {
+    background-color: #5b84c4; /* Bleu type PowerPoint */
+    padding: 10px 30px;
+    min-width: 150px;
+    text-align: center;
+    font-size: 1.1rem;
+    border: 1px solid #3d5a8a;
+}
+
+/* Bouton Valider en bas  */
+.btn-valider {
+    background-color: #5b84c4;
+    color: white;
+    border: 1px solid #3d5a8a;
+    padding: 10px 60px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 40px; /* Espace par rapport au bas de l'écran */
+}

@@ -1,0 +1,66 @@
+/* Style global pour centrer le contenu */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("nuages.jpeg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    text-align: center;
+    width: 300px;
+}
+
+/* Titre OPTIPLANT en forme de pilule (comme sur ton index) */
+.brand-title {
+    background-color: #21331b;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #ffffff;
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+/* Groupe d'inputs */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Style des champs Username et Password */
+.login-form input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px; /* Forme arrondie pour rester dans le thème */
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box; /* Évite que l'input dépasse */
+}
+
+.login-form input:focus {
+    border-color: #ff9800; /* Rappel de la couleur orange de tes alertes */
+}
+
+/* Bouton Connect */
+.connect-button {
+    background-color: #333; /* Noir/Gris foncé pour contraster */
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 60%; /* Plus petit que les inputs pour le look "bouton" */
+}
+
+.connect-button:hover {
+    background-color: #555;
+}
